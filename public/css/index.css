@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.mock-table {
+  display: block;
+  margin: 100px auto;
+  width: 160px;
+  line-height: 24px;
+  text-align: center;
+  font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+.mock-table > div {
+  margin: 10px 0;
+}
+.mock-table input {
+  width: 100%;
+}
+.mock-table .mock-btn {
+  display: block;
+  height: 24px;
+  color: #fff;
+  background: #333;
+}
+.sort-table-warp {
+  margin: 100px auto;
+  width: 50em;
+}
+.sort-table {
+  border-collapse: collapse;
+  width: 100%;
+  line-height: 18px;
+}
+.sort-table th {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  height: 32px;
+  cursor: pointer;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.sort-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.sort-table td {
+  border: 1px solid #ccc;
+  color: #333;
+  height: 32px;
+  text-align: center;
+}
+.sort-table .sort-icon {
+  display: inline-block;
+  position: relative;
+  margin: 0 4px;
+  width: 10px;
+  height: 18px;
+  vertical-align: middle;
+}
+.sort-table .sort-icon:before,
+.sort-table .sort-icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.sort-table .sort-icon:before {
+  top: 0;
+  left: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid #f2f2f2;
+}
+.sort-table .sort-icon:after {
+  top: 10px;
+  left: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #f2f2f2;
+}
+.sort-table .sort-icon.icon-up:before {
+  border-bottom: 8px solid #0af;
+}
+.sort-table .sort-icon.icon-down:after {
+  border-top: 8px solid #0af;
+}
